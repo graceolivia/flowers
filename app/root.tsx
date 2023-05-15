@@ -9,7 +9,7 @@ export default function App() {
                 name="viewport"
                 content="width=device-width,initial-scale=1"
             />
-            <title>Remix: So great, it's funny!</title>
+            <title>FL🌸WERS</title>
         </head>
         <body>
         <Outlet />
