@@ -5,7 +5,8 @@ import { useActionData } from "@remix-run/react";
 import { db } from "~/utils/db.server";
 import { badRequest } from "~/utils/request.server";
 function validateFlowerContent(content: string) {
-  if (content.length > 1) {
+  if (content.length > 5) {
+    console.log(content.length);
     return "One character only please";
   }
 }
@@ -83,6 +84,15 @@ export default function NewJokeRoute() {
               }
             />
           </label>
+          {actionData?.fieldErrors?.content ? (
+            <p
+              className="form-validation-error"
+              id="content-error"
+              role="alert"
+            >
+              {actionData.fieldErrors.content}
+            </p>
+          ) : null}
         </div>
         <div>
           {actionData?.formError ? (
