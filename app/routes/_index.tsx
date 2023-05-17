@@ -14,7 +14,7 @@ export default function IndexRoute() {
 
       <p>Gorgeous flowers for sale</p>
       <li>
-        <Link to="flowers">Find flowers!????</Link>
+        <Link to="flowers">Find flowers!</Link>
       </li>
     </div>
   );
