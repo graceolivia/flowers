@@ -3,15 +3,15 @@ const db = new PrismaClient();
 
 async function seed() {
   await Promise.all(
-    getJokes().map((joke) => {
-      return db.joke.create({ data: joke });
+    getFlowers().map((flower) => {
+      return db.flower.create({ data: flower });
     })
   );
 }
 
 seed();
 
-function getJokes() {
+function getFlowers() {
   return [
     {
       name: "Rose",
