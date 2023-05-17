@@ -17,7 +17,7 @@ export default function FlowersIndexRoute() {
   const data = useLoaderData<typeof loader>();
   return (
     <div>
-      <p>Here's a random flower?:</p>
+      <p>Here's a random flower:</p>
       <p>{data.randomFlower.content}</p>
       <Link to={data.randomFlower.id}>"{data.randomFlower.name}"</Link>
     </div>
